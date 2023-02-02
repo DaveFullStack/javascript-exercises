@@ -20,11 +20,7 @@ const subtract = function(...subtractNumbers) {
 
 const sum = function(...sumNumbers) {
   let sum = sumNumbers;
-  let result = 0;
-  for (i = 0; i < sum.length; i++) {
-    result = result + sum[i];
-  }
-  return result;
+  
 	
 };
 
