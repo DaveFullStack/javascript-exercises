@@ -1,4 +1,10 @@
-const repeatString = function() {
+const repeatString = function(hey, num) {
+    let repeatedString = '';
+    while (num > 0) {
+        repeatedString += hey;
+        num--;
+    }
+    return repeatedString;
 
 };
 
