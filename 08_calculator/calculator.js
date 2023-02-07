@@ -31,7 +31,18 @@ const sum = function(...sumNumbers) {
   return result;
 }
 
-const multiply = function() {
+const multiply = function(...multiply) {
+
+  let mult = multiply;
+  let result = 1;
+
+  for (i = 0; i < mult.length; i++) {
+    for (j = 0; j < mult[i].length; j++) {
+      result *= mult[i][j]; 
+    }
+  }
+  parseFloat(result);
+  return result;
 
 };
 
