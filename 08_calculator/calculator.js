@@ -46,13 +46,25 @@ const multiply = function(...multiply) {
 
 };
 
-const power = function() {
+const power = function(a, b) {
+
+  return Math.pow(a, b);
 	
 };
 
-const factorial = function() {
-	
-};
+const factorial = function(factorial) {
+  let result = 1;
+  let factor = factorial;
+
+  if (factor ===0 || factor == 1){
+    return 1;
+  }
+  while (factor > 1) {
+    result *= factor;
+    factor--;
+  }
+  return result;
+}
 
 // Do not edit below this line
 module.exports = {
