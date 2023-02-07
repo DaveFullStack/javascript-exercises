@@ -20,9 +20,16 @@ const subtract = function(...subtractNumbers) {
 
 const sum = function(...sumNumbers) {
   let sum = sumNumbers;
-  
-	
-};
+  let result = 0;
+  for (i = 0; i < sum.length; i++){
+    let sumSubArray = sum[i];
+    for (j = 0; j < sum[i].length; j++) {
+      result += sumSubArray[j]
+    }
+  }
+  parseFloat(result);
+  return result;
+}
 
 const multiply = function() {
 
