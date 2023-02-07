@@ -1,4 +1,6 @@
-const getTheTitles = function() {
+const getTheTitles = function(books1) {
+    let books = books1
+    return books.indexOf('title');
 
 };
 
